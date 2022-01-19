@@ -2,13 +2,16 @@ import React, { useEffect, useState, useRef } from 'react'
 import styled from 'styled-components'
 import { device } from './sizes'
 
-import Logo from '../images/Logo.png'
+
+import English from '../images/uk.png'
+import Polski from '../images/poland.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
-const NavBar = () => {
+const NavBar = ({ links, image }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const drawerRef = useRef(null);
 
@@ -43,17 +46,32 @@ const NavBar = () => {
         <Close>
           <span onClick={() => setMenuOpen(false)} ><FontAwesomeIcon icon={faTimes} /></span>
         </Close>
-        <Logodisplay><LogoType src={Logo} alt="working" /></Logodisplay>
+        <Logodisplay><LogoType src={image} alt="working" /></Logodisplay>
+
         <NavLinks>
-          <NavLink onClick={handleMenuLink} href="#aboutme">About Me</NavLink>
-          <NavLink onClick={handleMenuLink} href="#education">Education</NavLink>
-          <NavLink onClick={handleMenuLink} href="#prices">Offers/Prices</NavLink>
-          <NavLink onClick={handleMenuLink} href="#contact">Contact</NavLink>
+          {links.map(link => <NavLink key={link.id} onClick={handleMenuLink} href={`#${link.id}`}>{link.name}</NavLink>)}
         </NavLinks>
         <div>
           <Name>Patrycja Langa </Name>
           <Number href="tel:+4407440561736">(+44)07440561736</Number>
           <Email target="blank" href="mailto:psychologpatrycjalanga@gmail.com"> psychologpatrycjalanga@gmail.com</Email>
+          <Languages>
+            <Link href="/PL" passHref>
+              <FlagButton>
+                <PolskiFlag width={21} height={10} src={Polski} alt="Polski flag">
+                </PolskiFlag>
+                <Lang>Polski</Lang>
+              </FlagButton>
+            </Link>
+            <Space></Space>
+            <Link href='/' passHref>
+              <FlagButton>
+                <EnglishFlag width={21} height={10} src={English} alt="English flag">
+                </EnglishFlag>
+                <Lang>English</Lang>
+              </FlagButton>
+            </Link>
+          </Languages>
         </div>
       </NavContainerMenu>
 
@@ -61,6 +79,36 @@ const NavBar = () => {
 
   )
 }
+const FlagButton = styled.a`
+display: flex;
+
+`
+const Lang = styled.div`
+margin: 0 7px;
+color: #646464;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+`
+const Space = styled.div`
+background: black;
+width: 1px;
+margin: 0 20px 0 10px;
+`
+const EnglishFlag = styled(Image)`
+margin: 0 10px;
+`
+const PolskiFlag = styled(Image)`
+margin: 0 10px;
+`
+
+const Languages = styled.div`
+background: #F9FCF8;
+padding: 20px 0;
+display: flex;
+flex-direction: row;
+margin: 20px 0 0 0;
+justify-content: center;
+`
 const DivHamburguer3 = styled.div`
 background: #EDEDED;
 height: 2px;

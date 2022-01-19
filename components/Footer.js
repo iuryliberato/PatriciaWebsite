@@ -4,14 +4,14 @@ import styled from 'styled-components'
 import { device } from './sizes'
 
 
-const Footer = () => {
+const Footer = ({ linkText }) => {
 
 
   return (
 
     <FooterDiv>
       <Network>
-        Links to my network:
+        {linkText}:
       </Network>
       <LinksFooter>
         <Links target="blank" href="https://www.znanylekarz.pl/patrycja-langa/psycholog/gdansk">Znany lekarz</Links>
