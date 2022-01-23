@@ -106,6 +106,7 @@ export const Offers = styled.div`
 display: flex;
 font-family: 'Open Sans', sans-serif;
 flex-direction: Column;
+overflow: hidden;
 }
 @media ${device.biggerThanMobile}{
   flex-direction: Column;
