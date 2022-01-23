@@ -56,19 +56,19 @@ const NavBar = ({ links, image }) => {
           <Number href="tel:+4407440561736">(+44)07440561736</Number>
           <Email target="blank" href="mailto:psychologpatrycjalanga@gmail.com"> psychologpatrycjalanga@gmail.com</Email>
           <Languages>
-            <Link href="/PL" passHref>
-              <FlagButton>
-                <PolskiFlag width={21} height={10} src={Polski} alt="Polski flag">
-                </PolskiFlag>
-                <Lang>Polski</Lang>
-              </FlagButton>
-            </Link>
-            <Space></Space>
-            <Link href='/' passHref>
+            <Link href='/En' passHref>
               <FlagButton>
                 <EnglishFlag width={21} height={10} src={English} alt="English flag">
                 </EnglishFlag>
                 <Lang>English</Lang>
+              </FlagButton>
+            </Link>
+            <Space></Space>
+            <Link href="/" passHref>
+              <FlagButton>
+                <PolskiFlag width={21} height={10} src={Polski} alt="Polski flag">
+                </PolskiFlag>
+                <Lang>Polski</Lang>
               </FlagButton>
             </Link>
           </Languages>

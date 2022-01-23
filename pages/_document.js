@@ -36,11 +36,12 @@ export default class MyDocument extends Document {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
-          <title>Patrycja Langa Psychotherapist </title>
           <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Simonetta&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Simonetta&family=Vollkorn&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
         </Head>
         <body>
           <Main />

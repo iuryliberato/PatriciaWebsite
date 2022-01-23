@@ -1,6 +1,6 @@
-import Logo from '../images/Logo1.png'
-
 import NavBar from "../components/NavBar"
+import Logo2 from '../images/Logo2.png'
+import ScrollAnimation from "react-animate-on-scroll";
 
 import Footer from "../components/Footer"
 import { GlobalStyles } from "../components/GlobalStyles"
@@ -26,12 +26,12 @@ export default function Home() {
       .then(() => {
         Swal.fire({
           icon: 'success',
-          title: 'Message Sent Successfully'
+          title: 'Wiadomość wysłano poprawnie'
         })
       }, (error) => {
         Swal.fire({
           icon: 'error',
-          title: 'Ooops, something went wrong',
+          title: 'Uuups, Coś pozło nie tak',
           text: error.text,
         })
       });
@@ -39,21 +39,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Patrycja Langa Psychotherapist </title>
+        <title>Patrycja Langa Psychoterapeutką </title>
       </Head>
       <GlobalStyles />
-      <NavBar links={[{ name: 'About Me', id: 'aboutme' }, { name: 'Education', id: 'education' }, { name: 'Offers/Prices', id: 'offers-price' }, { name: 'Contact', id: 'contact' }]} image={Logo} />
+      <NavBar links={[{ name: 'O mnie', id: 'O-mnie' }, { name: 'Edukacja', id: 'Edukacja' }, { name: 'Oferta', id: 'Oferta' }, { name: 'Kontakt', id: 'Kontakt' }]} image={Logo2} />
       <Root>
         <Header>
           <Heading>Patrycja Langa</Heading>
-          <SubHeaidng>Psychologist | Psychotherapist</SubHeaidng>
+          <SubHeaidng>Psycholożką | Psychoterapeutką</SubHeaidng>
         </Header>
 
-        <Introduction id="aboutme">
+        <Introduction id="O-mnie">
 
           <MainInfo>
-            <Welcome >Welcome!</Welcome>
-            <AboutMe>I am a psychologist and psychotherapist during a comprehensive, 4-year training in cognitive- behavioral therapy with a motivating dialogue organized by the Akademia Motywacji i Edukacji, recommended by the Polish Society for Cognitive and Behavioral Therapy and the European Society for Cognitive and Behavioral Therapy.</AboutMe>
+            <Welcome >Witaj!</Welcome>
+            <AboutMe>Jestem psycholożką i psychoterapeutką w trakcie 4-letniego, całościowego szkolenia z terapii poznawczo – behawioralnej z dialogiem motywującym organizowanej przez Akademię Motywacji i Edukacji, rekomendowanej przez Polskie Towarzystwo Terapii Poznawczej i Behawioralnej oraz Europejskie Towarzystwo Terapii Poznawczej i Behawioralnej.</AboutMe>
           </MainInfo>
           <ProfileImgDiv>
             <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
@@ -63,33 +63,32 @@ export default function Home() {
         <MoreAboutMe>
 
           <AboutMeRight>
-            <p>I have graduated from the University of Gdańsk with master degree in psychology with two academic paths: Psychology of Social Pathologies and Psychology of the Judiciary-Penitentiary and Psychology of Organization, Management and Marketing. In addition to that I am also a sex educator and crisis assistant. </p>
+            <p>Ukończyłam jednolite studia magisterskie z psychologii na Uniwersytecie Gdańskim z dwoma ścieżkami naukowymi: Psychologia Patologii Społecznych i Psychologia Sądowo-Penitencjarna oraz Psychologia Organizacji, Zarządzania i Marketingu. Jednocześnie jestem edukatorką seksualną oraz interwentką kryzysową.</p>            <br />
             <br />
-            <p> I am a member of the Polish Society for Cognitive and Behavioral Therapy and I work in accordance with the Code of Ethics and Professional Psychology of the Polish Psychological Society.</p>
+            <p>Jestem członkinią Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej i pracuję zgodnie z Kodeksem Etyczno-Zawodowym Psychologa Polskiego Towarzystwa Psychologicznego. </p>
             <br />
-            <p> I gained my professional experience, mainly in the Crisis Intervention Center of the Foundation Dajemy Dzieciom Siłę in Gdańsk, as a crisis assistant, in the psychiatric ward at the Provincial Psychiatric Hospital of the name of prof. Tadeusz Bilikiewicz and in my private practice.</p>
+            <p> Doświadczenie zawodowe zdobywałam głównie w Centrum Interwencji Kryzysowej Fundacji Dajemy Dzieciom Siłę w Gdańsku, jako interwentka kryzysowa, na oddziale psychiatrycznym w Wojewódzkim Szpitalu Psychiatrycznym im. prof. Tadeusza Bilikiewicza oraz w pracy gabinetowej. </p>
           </AboutMeRight>
           <AboutMeRight>
             <br />
-            <p>In my work, an individual approach to each client and the relationship we build together is extremely important. I work with full commitment and empathy, using tested and effective methods of help, mainly using the cognitive-behavioral approach and third wave approaches - ACT and motivating dialogue.</p>
+            <p>W mojej pracy niezwykle ważne jest dla mnie indywidualne podejście do każdego klienta oraz relacja, którą wspólnie budujemy. Pracuję z pełnym zaangażowaniem i empatią, wykorzystując przebadane i skuteczne metody pomocy, głównie korzystając z podejścia poznawczo-behawioralnego oraz podejść trzeciej fali- ACT i dialogu motywującego. </p>
             <br />
-            <p>Taking care of the professionalism of the help provided, I regularly participate in trainings and conferences, constantly expanding my psychological and psychotherapeutic competences. I am subjecting my work to regular supervision by certified supervisors.</p>
+            <p>Dbając o profesjonalizm udzielanej pomocy, regularnie uczestniczę w szkoleniach i konferencjach, ciągle poszerzając kompetencje psychologiczne oraz psychoterapeutyczne. Moją pracę poddaję regularnej superwizji u certyfikowanych superwizorów. </p>
             <br />
-            <p>If you would like me to accompany you on your journey to the life worth living, do not hesitate to contact me.</p>
+            <p>Jeżeli chciałabyś/ chciałbyś, abym towarzyszyła Ci w podróży do życia, którym chcesz żyć, skontaktuj się ze mną. </p>
             <br />
-            <p>See you soon!</p>
+            <p>Do zobaczenia!</p>
           </AboutMeRight>
         </MoreAboutMe>
-        <EducationDiv id='education'>
+        <EducationDiv id='Edukacja'>
           <div>
             <Tittle>
-              Education
+              Wykształcenie
             </Tittle>
             <AboutMeRight>
-              <p>Akademia Motywacji I Edukacji - comprehensive training in Cognitive - Behavioral Therapy with Motivating Dialogue</p>
+              <p>Akademia Edukacji i Motywacji- całościowe szkolenie z Terapii Poznawczo – Behawioralnej z Dialogiem Motywującym</p>
               <br />
-              <p>University of Gdańsk - Faculty of Social Sciences - Psychology (MA). Completed two scientific paths: Psychology of Organization, Management and Marketing, Psychology of Social Pathology and Psychology of the Judiciary and Penitentiary.
-                Including the implemented program for the Pedagogical Preparation.</p>
+              <p>Uniwersytet Gdański — Wydział Nauk Społecznych — Psychologia pięcioletnie studia magisterskie. Ukończone dwie ścieżki naukowe Psychologia  Organizacji, Zarządzania i Marketingu oraz Psychologia Patologii Społecznych i Psychologia Sądowo- Penitencjarna. W tym zrealizowany program Przygotowania Pedagogicznego.</p>
               <br />
               <p>Universita degli Studi di Milano-Bicocca- Psicologia</p>
             </AboutMeRight>
@@ -99,84 +98,90 @@ export default function Home() {
         <CoursesDiv>
 
           <Tittle>
-            Courses and conferences
+            Kursy i konferencje
           </Tittle>
           <CoursesRef>
             <AboutMeRight>
-              <p>How to enrich DBT with Motivating Dialogue</p>
+              <p>Jak wzbogacić DBT o Dialog Motywujący</p>
               <br />
-              <p>Motivating dialogue - about sport, changing habits and lifestyle</p>
+              <p>Dialog motywujący- o sporcie, zmianie nawyków i stylu życia</p>
               <br />
-              <p>Motivating dialogue as an alternative to the punishment</p>
+              <p>Dialog motywujący jako alternatywa wobec kar</p>
               <br />
               <p>9th Cracow Conference of Psychology and Law</p>
               <br />
-              <p>Developing the theory of mind</p>
+              <p>Rozwijanie teorii umysłu</p>
               <br />
-              <p>Quality of life with infertility, part II- psychological</p>
+              <p>Jakość życia w niepłodności cz. II- psychologiczna</p>
               <br />
-              <p>Quality of life with infertility, part II- medical</p>
+              <p>Jakość życia w niepłodności cz. I- medyczna</p>
               <br />
-              <p>Sexologist in the process of lifelong learning. II. Patient and a sexologist in the therapy process</p>
+              <p>Seksuolog w procesie kształcenia ustawicznego cz. II Pacjent i seksuolog w procesie terapii</p>
               <br />
-              <p>Theory and therapeutic practice "Between love and hate - about sexuality"</p>
+              <p>Teoria i praktyka terapeutyczna &quot;Między miłością a nienawiścią- o seksualności&quot;</p>
             </AboutMeRight>
             <AboutMeRight>
               <br />
-              <p>Betrayal - problem or symptom? Psychotherapeutic work with a couple</p>
+              <p>Zdrada- problem czy objaw? Praca psychoterapeutyczna z parą</p>
               <br />
-              <p>Consensual non-monogamy in aid work</p>
+              <p>Konsensualna niemonogamia w pracy pomocowej</p>
               <br />
-              <p>Psychosexual development of a child</p>
+              <p>Rozwój psychoseksualny dziecka</p>
               <br />
-              <p>The PLISSIT / IC model in assistive work with sexuality</p>
+              <p>Model PLISSIT/IC  w pracy pomocowej z seksualnością</p>
               <br />
-              <p>Sexual violence - the perspective of victims and perpetrators</p>
+              <p>Przemoc seksualna- perspektywa ofiar i sprawców</p>
               <br />
-              <p>Child sexual abuse: recognition, support, reporting</p>
+              <p>Wykorzystywanie seksualne dziecka: rozpoznanie, wsparcie, zgłaszanie</p>
               <br />
-              <p>Sex educators course</p>
+              <p>Kurs edukatorów seksualnych </p>
               <br />
-              <p>ACT revolution- series of trainings </p>
+              <p>ACT-owa rewolucja- cykl szkoleń</p>
             </AboutMeRight>
           </CoursesRef>
         </CoursesDiv>
-        <PricesDiv id='offers-price'>
-          <Prices>Prices / Offers </Prices>
+        <PricesDiv id='Oferta'>
+          <Prices>Oferta</Prices>
           <Offers>
-            <PriceBox>
-              <Subtext>Individual consultation online</Subtext>
-              <p>This is our first meeting, the first step in recognizing the problems you are struggling with . Consultation may be a form of obtaining psychological advice, or an introduction to cognitive behavioral therapy. During such a meeting, we will jointly look at the problem you come across and decide on the best possible action. Usually it is one to couple meetings.</p>
-              <B>£45 (online) or £55 (in studio)</B>
-            </PriceBox>
-            <PriceBox2>
-              <Subtext>Individual psychotherapy online</Subtext>
-              <p>Psychotherapy is a form of treating mental problems. My work is based mainly on the Cognitive-Behavioral approach and the third wave approaches - ACT and Motivating Dialogue. These are working methods with proven effectiveness. The techniques will be adapted to your needs and capabilities and the situation in which you are. Psychotherapy is a longer form of help, and the length of the process is set individually. Meetings are usually held once a week.</p>
-              <B>£45 (online) or £55 (in studio)</B>
-            </PriceBox2>
-            <PriceBox3>
-              <Subtext>Crisis intervention online</Subtext>
-              <p>Crisis intervention is deliberate psychological support in a short-term form (from a few to a dozen or so meetings). The sessions are aimed at returning to balance after experiencing a crisis in life and solving a problematic situation. The most common crisis situations are the experience of the loss of a loved one, an accident, life changes or any other stressful situation. I conduct these individual meetings mainly on the basis of the crisis intervention theory.</p>
-              <B>£45 (online) or £55 (in studio)</B>
-            </PriceBox3>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce >
+              <PriceBox>
+                <Subtext>Konsultacja indywidualna online</Subtext>
+                <p>Jest to nasze pierwsze spotkanie, pierwszy krok do rozpoznania problemów, z jakimi się zmagasz. Konsultacje mogą być formą uzyskania porady psychologicznej lub wstępem do podjęcia terapii poznawczo behawioralnej. Podczas nich wspólnie przyjrzymy się naturze problemu, z którym przychodzisz i zdecydujemy o najlepszym możliwym działaniu. Najczęściej jest to jedno lub kilka spotkań. </p>
+                <B>£45 (online) or £55 (w gabinecie)</B>
+              </PriceBox>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce >
+              <PriceBox2>
+                <Subtext>Psychoterapia indywidualna online</Subtext>
+                <p>Psychoterapia jest formą leczenia problemów natury psychicznej. Swoją pracę opieram głównie na nurcie Poznawczo-Behawioralnym oraz podejściach trzeciej fali- ACT oraz Dialogu Motywującym. Są to metody pracy o udowodnionej skuteczności. Techniki dostosowane będą do Twoich potrzeb, możliwości oraz sytuacji, w której się znajdujesz. Psychoterapia jest dłuższą formą pomocy, a długość procesu ustalamy indywidualnie. Spotkania odbywają się najczęściej raz w tygodniu. </p>
+                <B>£45 (online) or £55 (w gabinecie)</B>
+              </PriceBox2>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce >
+              <PriceBox3>
+                <Subtext>Interwencja kryzysowa online</Subtext>
+                <p>Interwencja kryzysowa jest celowym wsparciem psychologicznym w krótkoterminowej formie (od kilku do kilkunastu spotkań). Sesje ukierunkowane są na powrót do równowagi po doświadczeniu kryzysu w życiu oraz rozwiązanie sytuacji problemowej. Najczęstsze sytuacje  to doświadczenie straty bliskiej osoby, wypadek lub inne zmiany w życiu. Te indywidualne spotkania przeprowadzam głównie w oparciu o teorię interwencji kryzysowej</p>
+                <B>£45 (online) or £55 (w gabinecie)</B>
+              </PriceBox3>
+            </ScrollAnimation>
           </Offers>
         </PricesDiv>
-        <Contact id='contact'>
-          <Prices>Contact </Prices>
+        <Contact id='Kontakt'>
+          <Prices>Kontakt </Prices>
           <ContactInfo>
-            Currently, all meetings are held online via the messenger of our choice (no need to install anything). To arrange a session, please contact me by filling out the form or by writing to the e-mail address provided below.
+            Obecnie wszystkie spotkania odbywają się online przez wybrany przez nas komunikator (nie trzeba niczego instalować). W celu umówienia się na sesje skontaktuj się ze mną wypełniając formularz lub pisząc na podanego niżej emaila.
           </ContactInfo>
           <DivForm>
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <Input {...register("email", { required: true })} placeholder='Email…' type="email" />
-              <Input {...register("name", { required: true })} placeholder='Name…' type="text" />
-              <TextArea {...register("message", { required: true })} placeholder='Message…' rows="5" />
-              <Button type='submit' color='green'>Send</Button>
+              <Input {...register("email", { required: true })} placeholder='E-mail…' type="email" />
+              <Input {...register("name", { required: true })} placeholder='Nazwa…' type="text" />
+              <TextArea {...register("message", { required: true })} placeholder='Wiadomość…' rows="5" />
+              <Button type='submit' color='green'>Wysłać</Button>
             </Form>
           </DivForm>
         </Contact>
       </Root>
-      <Footer linkText="Links to my network" />
+      <Footer linkText="Linki do mojej sieci" />
     </>
   )
 }
