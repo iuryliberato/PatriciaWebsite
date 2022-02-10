@@ -29,7 +29,7 @@ border: 2px solid rgba(237,235,219,0.6);
 background: #F9FCF8;
 color: #343434;
 border-radius: 5px;
-padding: 0 0 0 10px;
+padding: 5px 0 0 10px;
 font-family: 'Vollkorn', serif;
 font-size: 17px;
 `

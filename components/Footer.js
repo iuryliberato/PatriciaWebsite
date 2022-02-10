@@ -2,6 +2,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { device } from './sizes'
+import { BsInstagram, BsFacebook } from 'react-icons/bs'
+
+
+
+
 
 
 const Footer = ({ linkText }) => {
@@ -14,8 +19,8 @@ const Footer = ({ linkText }) => {
         {linkText}:
       </Network>
       <LinksFooter>
-        <Links target="blank" href="https://www.znanylekarz.pl/patrycja-langa/psycholog/gdansk">Znany lekarz</Links>
-        <Links target="blank" href="https://twojpsycholog.pl/profil-psychologa/patrycja-langa-1089">Twój psycholog</Links>
+        <Links target="blank" href="https://www.facebook.com/Psycholog-Ptrycja-Langa-103486695580486"><BsFacebook /></Links>
+        <Links target="blank" href="https://www.instagram.com/psychologpatrycjalanga/"><BsInstagram /></Links>
 
       </LinksFooter>
       <Copy target="blank" href="https://github.com/iuryliberato">&copy; 2022 Iury Liberato</Copy>
@@ -68,48 +73,51 @@ padding: 50px 20px 70px;
 const LinksFooter = styled.div`
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 35px;
 @media ${device.biggerThanMobile}{
-  gap: 20px
+  gap: 40px
 }
 @media ${device.tablet}{
-  gap: 30px;
+  gap: 50px;
 }
 @media ${device.desktop}{
-  gap: 30px;
+  gap: 50px;
 }
 @media ${device.wide}{
-  gap: 30px;
+  gap: 50px;
 }
 
 `
 
 const Links = styled.a`
 font-family: 'Vollkorn', serif;
-font-size: 16px;
 color: #5B5B5B;
 text-decoration: none;
 border-radius: 10px;
+font-size: 25px;
+
 
 &:hover {
-  background-color: #F9FCF8;
-  padding: 5px 10px;
+  &:hover {
+    transform: scale(1.3);
+  }
+ 
 }
 @media ${device.biggerThanMobile}{
   margin-right: 0;
-  font-size: 18px;
+  font-size: 27px;
 }
 @media ${device.tablet}{
   margin-right: 0;
-  font-size: 19px;
+  font-size: 33px;
 }
 @media ${device.desktop}{
 
-  font-size: 20px;
+  font-size: 33px;
 }
 @media ${device.wide}{
   
-  font-size: 23px;
+  font-size: 33px;
 }
 `
 
