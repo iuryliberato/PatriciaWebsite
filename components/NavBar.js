@@ -137,7 +137,7 @@ cursor: pointer;
 const MenuButton = styled.button`
 margin-top: 15px;
 height: 40px;
-width: 40px;
+width: 45px;
 background: none;
 border-radius: 2px;
     outline: 0 none;
@@ -174,7 +174,7 @@ position: fixed;
 const Email = styled.a`
 display: flex;
 justify-content: center;
-font-size: 13px;
+font-size: 15px;
 color: #353535;
 text-decoration: none;
 `
@@ -182,15 +182,15 @@ const Number = styled.a`
 display: flex;
 justify-content: center;
 color: #454545;
-font-size: 13px;
-margin: 5px auto 5px;
+font-size: 18px;
+margin: 15px auto 10px;
 text-decoration: none;
 `
 const Name = styled.div`
 display: flex;
 justify-content: center;
 color: #4D4D4D;
-font-size: 20px;
+font-size: 15px;
 `
 
 const NavLinks = styled.div`
@@ -220,17 +220,16 @@ position: relative;
   left: 0;
   width: 100%;
 }
-
 `
 
 const LogoType = styled(Image)`
-width: 170px;
-height: 130px;
+
 `
 const Logodisplay = styled.div`
 display: flex;
 justify-content: center;
-margin: 20px;
+
+
 `
 const NavContainerMenu = styled.div`
 transform: ${props => props.menuOpen ? 'translate(0, 0)' : 'translate(100%, 0)'};
@@ -242,7 +241,7 @@ right: 0;
 bottom: 0;
 display: flex;
 flex-direction: column;
-font-family: 'Simonetta', cursive;
+font-family: 'Cormorant', serif;
 justify-content: start;
 background-color: #FCFCFC;
 padding: 20px 0 30px;

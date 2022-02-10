@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import Footer from "../components/Footer"
 import { GlobalStyles } from "../components/GlobalStyles"
-import { Root, Header, Heading, SubHeaidng, Introduction, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button } from '../styles/styles'
+import { Root, Header, Heading, SubHeaidng, Introduction, SeeYou, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button } from '../styles/styles'
 import React from 'react'
 
 import ProfileImage from '../images/profile-image.png'
@@ -43,7 +43,7 @@ export default function Home() {
         <title>Patrycja Langa Psychotherapist </title>
       </Head>
       <GlobalStyles />
-      <NavBar links={[{ name: 'About Me', id: 'aboutme' }, { name: 'Education', id: 'education' }, { name: 'Offers/Prices', id: 'offers-price' }, { name: 'Contact', id: 'contact' }]} image={Logo} />
+      <NavBar links={[{ name: 'About Me', id: 'aboutme' }, { name: 'Education', id: 'education' }, { name: 'Courses/ Conferencies', id: 'conferencies' }, { name: 'Offers', id: 'offers-price' }, { name: 'Contact', id: 'contact' }]} image={Logo} />
       <Root>
         <Header>
           <Heading>Patrycja Langa</Heading>
@@ -54,7 +54,7 @@ export default function Home() {
 
           <MainInfo>
             <Welcome >Welcome!</Welcome>
-            <AboutMe>I am a psychologist and psychotherapist during a comprehensive, 4-year training in cognitive- behavioral therapy with a motivating dialogue organized by the Akademia Motywacji i Edukacji, recommended by the Polish Society for Cognitive and Behavioral Therapy and the European Society for Cognitive and Behavioral Therapy.</AboutMe>
+            <AboutMe>I am a psychologist and a&nbsp;CBT psychotherapist in&nbsp;the process of&nbsp;certification, working in&nbsp;London and online. I mainly work with individuals who&nbsp;experience anxiety, depression, problems with sleeping, crises or&nbsp;traumas, and&nbsp;people who struggle with&nbsp;stress, and&nbsp;sexual problems.</AboutMe>
           </MainInfo>
           <ProfileImgDiv>
             <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
@@ -64,21 +64,26 @@ export default function Home() {
         <MoreAboutMe>
 
           <AboutMeRight>
-            <p>I have graduated from the University of Gdańsk with master degree in psychology with two academic paths: Psychology of Social Pathologies and Psychology of the Judiciary-Penitentiary and Psychology of Organization, Management and Marketing. In addition to that I am also a sex educator and crisis assistant. </p>
+            <p>Currently I’m&nbsp;during a&nbsp;comprehensive, 4-year training in&nbsp;cognitive- behavioral therapy with&nbsp;a&nbsp;motivating dialogue organized by&nbsp;the&nbsp;Akademia Motywacji i&nbsp;Edukacji, recommended by&nbsp;the&nbsp;Polish Society for&nbsp;Cognitive and&nbsp;Behavioral Therapy and&nbsp;the&nbsp;European Society for&nbsp;Cognitive and&nbsp;Behavioral Therapy.</p>
             <br />
-            <p> I am a member of the Polish Society for Cognitive and Behavioral Therapy and I work in accordance with the Code of Ethics and Professional Psychology of the Polish Psychological Society.</p>
+            <p>I graduated from the&nbsp;University of&nbsp;Gdańsk with&nbsp;master degree in&nbsp;psychology with&nbsp;two academic paths: Psychology of&nbsp;Social Pathologies and Psychology of&nbsp;the&nbsp;Judiciary-Penitentiary and&nbsp;Psychology of&nbsp;Organization, Management and Marketing. In&nbsp;addition to&nbsp;that I’m also a&nbsp;sex educator and&nbsp;crisis assistant. </p>
             <br />
-            <p> I gained my professional experience, mainly in the Crisis Intervention Center of the Foundation Dajemy Dzieciom Siłę in Gdańsk, as a crisis assistant, in the psychiatric ward at the Provincial Psychiatric Hospital of the name of prof. Tadeusz Bilikiewicz and in my private practice.</p>
+            <p>I’m a member of the Polish Society for&nbsp;Cognitive and Behavioral Therapy and I&nbsp;work in&nbsp;accordance with&nbsp;the&nbsp;Code of&nbsp;Ethics and&nbsp;Professional Psychology of&nbsp;the&nbsp;Polish Psychological Society.</p>
+            <br />
+            <p>I gained my professional experience as&nbsp;a&nbsp;crisis assistance in&nbsp;the&nbsp;Crisis Intervention Center of&nbsp;the&nbsp;Foundation Dajemy Dzieciom Siłę in&nbsp;Gdańsk, then through the&nbsp;psychiatric ward under the&nbsp;name of&nbsp;prof. Tadeusz Bilikiewicz in&nbsp;Gdańsk, and&nbsp;finally in&nbsp;my&nbsp;private practice.</p>
+            <br />
           </AboutMeRight>
           <AboutMeRight>
+
+            <p>An individual approach to each client and&nbsp;the relationship we build together is&nbsp;extremely important. I work with full&nbsp;commitment and&nbsp;empathy, using tested and&nbsp;effective methods, using mainly the&nbsp;cognitive-behavioral approach and&nbsp;third wave approaches - ACT and&nbsp;motivating dialogue.</p>
             <br />
-            <p>In my work, an individual approach to each client and the relationship we build together is extremely important. I work with full commitment and empathy, using tested and effective methods of help, mainly using the cognitive-behavioral approach and third wave approaches - ACT and motivating dialogue.</p>
+            <p>I regularly participate in trainings and&nbsp;conferences, constantly expanding my psychological and psychotherapeutic competences. I&nbsp;subject my&nbsp;work to&nbsp;certified supervisors.</p>
             <br />
-            <p>Taking care of the professionalism of the help provided, I regularly participate in trainings and conferences, constantly expanding my psychological and psychotherapeutic competences. I am subjecting my work to regular supervision by certified supervisors.</p>
+            <p>If you would like me to accompany you on&nbsp;your journey to the&nbsp;life worth living, do not&nbsp;hesitate to contact me.</p>
             <br />
-            <p>If you would like me to accompany you on your journey to the life worth living, do not hesitate to contact me.</p>
-            <br />
-            <p>See you soon!</p>
+            <SeeYou>
+              <p>See you soon!</p>
+            </SeeYou>
           </AboutMeRight>
         </MoreAboutMe>
         <EducationDiv id='education'>
@@ -89,24 +94,30 @@ export default function Home() {
             <AboutMeRight>
               <p>Akademia Motywacji I Edukacji - comprehensive training in Cognitive - Behavioral Therapy with Motivating Dialogue</p>
               <br />
-              <p>University of Gdańsk - Faculty of Social Sciences - Psychology (MA). Completed two scientific paths: Psychology of Organization, Management and Marketing, Psychology of Social Pathology and Psychology of the Judiciary and Penitentiary.
+              <p>University of Gdańsk - Faculty of Social Sciences - Psychology (MA). Completed two&nbsp;scientific paths: Psychology of&nbsp;Organization, Management and&nbsp;Marketing, Psychology of&nbsp;Social Pathology and&nbsp;Psychology of&nbsp;the&nbsp;Judiciary and&nbsp;Penitentiary.
                 Including the implemented program for the Pedagogical Preparation.</p>
               <br />
-              <p>Universita degli Studi di Milano-Bicocca- Psicologia</p>
+              <p>Universita degli Studi di Milano-Bicocca-Psicologia</p>
             </AboutMeRight>
           </div>
 
         </EducationDiv>
-        <CoursesDiv>
+        <CoursesDiv id='conferencies'>
 
           <Tittle>
-            Courses and conferences
+            Courses and Conferences
           </Tittle>
           <CoursesRef>
             <AboutMeRight>
+              <p>Therapeutic work with patients with insomnia - effective interventions</p>
+              <br />
+              <p>Perfectionism - How Cognitive Behavioral Therapy&nbsp;and Rational&nbsp;Behavior Therapy can&nbsp;help</p>
+              <br />
+              <p>In the trap of procrastination - techniques of change</p>
+              <br />
               <p>How to enrich DBT with Motivating Dialogue</p>
               <br />
-              <p>Motivating dialogue - about sport, changing habits and lifestyle</p>
+              <p>Motivating dialogue - about sport, changing habits and&nbsp;lifestyle</p>
               <br />
               <p>Motivating dialogue as an alternative to the punishment</p>
               <br />
@@ -118,12 +129,13 @@ export default function Home() {
               <br />
               <p>Quality of life with infertility, part II- medical</p>
               <br />
-              <p>Sexologist in the process of lifelong learning. II. Patient and a sexologist in the therapy process</p>
-              <br />
-              <p>Theory and therapeutic practice Between love and hate - about sexuality</p>
+
+
             </AboutMeRight>
             <AboutMeRight>
+              <p>Sexologist in the process of lifelong learning. II. Patient and a sexologist in&nbsp; the&nbsp;therapy process</p>
               <br />
+              <p>Theory and therapeutic practice Between love and hate - about sexuality</p>
               <p>Betrayal - problem or symptom? Psychotherapeutic work with a couple</p>
               <br />
               <p>Consensual non-monogamy in aid work</p>
@@ -143,35 +155,34 @@ export default function Home() {
           </CoursesRef>
         </CoursesDiv>
         <PricesDiv id='offers-price'>
-          <Prices>Prices / Offers </Prices>
+          <Prices> Offers </Prices>
           <Offers>
-            <ScrollAnimation animateIn="fadeInRight" animateOnce >
-              <PriceBox>
-                <Subtext>Individual consultation online</Subtext>
-                <p>This is our first meeting, the first step in recognizing the problems you are struggling with . Consultation may be a form of obtaining psychological advice, or an introduction to cognitive behavioral therapy. During such a meeting, we will jointly look at the problem you come across and decide on the best possible action. Usually it is one to couple meetings.</p>
-                <B>£45 (online) or £55 (in studio)</B>
-              </PriceBox>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInRight" animateOnce >
-              <PriceBox2>
-                <Subtext>Individual psychotherapy online</Subtext>
-                <p>Psychotherapy is a form of treating mental problems. My work is based mainly on the Cognitive-Behavioral approach and the third wave approaches - ACT and Motivating Dialogue. These are working methods with proven effectiveness. The techniques will be adapted to your needs and capabilities and the situation in which you are. Psychotherapy is a longer form of help, and the length of the process is set individually. Meetings are usually held once a week.</p>
-                <B>£45 (online) or £55 (in studio)</B>
-              </PriceBox2>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInRight" animateOnce >
-              <PriceBox3>
-                <Subtext>Crisis intervention online</Subtext>
-                <p>Crisis intervention is deliberate psychological support in a short-term form (from a few to a dozen or so meetings). The sessions are aimed at returning to balance after experiencing a crisis in life and solving a problematic situation. The most common crisis situations are the experience of the loss of a loved one, an accident, life changes or any other stressful situation. I conduct these individual meetings mainly on the basis of the crisis intervention theory.</p>
-                <B>£45 (online) or £55 (in studio)</B>
-              </PriceBox3>
-            </ScrollAnimation>
+            <PriceBox animateIn="fadeInRight" animateOnce >
+
+              <Subtext>Individual consultation </Subtext>
+              <p>In our first meeting the first step will&nbsp;be&nbsp;recognising problems you&nbsp;are&nbsp;struggling with. Consultation may be&nbsp;a&nbsp;form of&nbsp;obtaining psychological advice, or&nbsp;an&nbsp;introduction to cognitive behavioral therapy. During such a meeting, we will&nbsp;jointly look at&nbsp;any problems you&nbsp;come across and decide on&nbsp;the best possible action. Usually it&nbsp;is one to&nbsp;couple meetings.</p>
+              <B>£45 (online) or £55 (in studio)</B>
+
+            </PriceBox>
+            <PriceBox2 animateIn="fadeInRight" animateOnce >
+
+              <Subtext>Individual psychotherapy</Subtext>
+              <p>Psychotherapy is a form of treating mental problems. My work is based mainly on the Cognitive-Behavioral approach and the third wave approaches - ACT and Motivating Dialogue. These are working methods with proven effectiveness. The techniques will be adapted to your needs and capabilities and the situation in which you are. Psychotherapy is a longer form of help and the length of the process is set individually. Meetings are usually held once a week.</p>
+              <B>£45 (online) or £55 (in studio)</B>
+            </PriceBox2>
+            <PriceBox3 animateIn="fadeInRight" animateOnce >
+
+              <Subtext>Crisis intervention</Subtext>
+              <p>Crisis intervention is deliberate psychological support in a short-term form (from a few to a dozen or so meetings). The sessions are aimed at returning to balance after experiencing a crisis in life and solving a problematic situation. The most common crisis include: the loss of a loved one, an accident, life changes or any other stressful situation. I conduct these individual meetings mainly on the basis of the crisis intervention theory.</p>
+              <B>£45 (online) or £55 (in studio)</B>
+
+            </PriceBox3>
           </Offers>
         </PricesDiv>
         <Contact id='contact'>
           <Prices>Contact </Prices>
           <ContactInfo>
-            Currently, all meetings are held online via the messenger of our choice (no need to install anything). To arrange a session, please contact me by filling out the form or by writing to the e-mail address provided below.
+            To arrange a session, please contact me by filling out the form or by writing to the e-mail address provided below.
           </ContactInfo>
           <DivForm>
             <Form onSubmit={handleSubmit(onSubmit)}>

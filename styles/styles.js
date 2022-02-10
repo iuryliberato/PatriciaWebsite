@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { device } from '../styles/sizes'
 import Image from 'next/image'
+import ScrollAnimation from "react-animate-on-scroll";
+
 
 export const Button = styled.button`
 border: none;
@@ -15,6 +17,12 @@ cursor: pointer;
 &:hover {
   background-color: #F9FCF8;
 }
+`
+export const SeeYou = styled.div`
+display: flex;
+justify-content: flex-end;
+margin: 60px 20px 0px;
+font-size: 16px;
 `
 export const TextArea = styled.textarea`
 border: 2px solid rgba(237,235,219,0.6);
@@ -55,19 +63,23 @@ text-align: center;
 export const Contact = styled.div`
 background: #F9F8EF;
 padding: 50px 20px;
+line-height: 20px;
 @media ${device.biggerThanMobile}{
   padding: 50px 20px;
   font-size: 14px;
+  line-height: 20px;
 }
 
 @media ${device.tablet}{
   padding: 80px 50px;
   font-size: 14px;
+  
 
 }
 @media ${device.desktop}{
   padding: 80px 100px;
   font-size: 15px;
+  line-height: 20px;
 }
 @media ${device.wide}{
   padding: 100px 200px;
@@ -80,25 +92,26 @@ font-family: 'Open Sans', sans-serif;
 margin: 10px 0;
 font-size: 16px;
 `
-export const PriceBox3 = styled.div`
-padding: 0 50px;
+
+const PriceBoxLayout = styled(ScrollAnimation)`
+padding: 35px;
+margin-bottom: 20px;
+width: 100%;
+@media ${device.desktop}{
+  width: 33%;
+}
+
+`
+export const PriceBox3 = styled(PriceBoxLayout)`
 background: #EDEBDB;
-padding: 35px;
-margin-bottom: 20px;
 `
-export const PriceBox2 = styled.div`
-padding: 0 50px;
-padding: 35px;
-margin-bottom: 20px;
+export const PriceBox2 = styled(PriceBoxLayout)`
 `
-export const PriceBox = styled.div`
-padding: 0 50px;
+export const PriceBox = styled(PriceBoxLayout)`
 background: #F9F8EF;
-padding: 35px;
-margin-bottom: 20px;
 `
 export const Subtext = styled.div`
-font-family: 'Simonetta', cursive;
+font-family: 'Cormorant', serif;
 font-size: 25px;
 margin: 0 0 20px;
 `
@@ -116,7 +129,7 @@ overflow: hidden;
   flex-direction: column;
 }
 @media ${device.desktop}{
-  flex-direction: column;
+  flex-direction: row;
 }
 @media ${device.wide}{
   flex-direction: row;
@@ -147,7 +160,7 @@ font-size: 14px;
 `
 
 export const Prices = styled.div`
-font-family: 'Simonetta', cursive;
+font-family: 'Cormorant', serif;
 font-size: 30px;
 display: flex;
 justify-content: center;
@@ -167,10 +180,6 @@ margin: 50px 0 90px;
   font-size: 45px;
 }
 `
-
-
-
-
 
 export const CoursesRef = styled.div`
 display: flex;
@@ -219,7 +228,7 @@ flex-direction: Column;
 }
 `
 export const Tittle = styled.div`
-font-family: 'Simonetta', cursive;
+font-family: 'Cormorant', serif;
 font-size: 30px;
 margin: 20px 0;
 @media ${device.biggerThanMobile}{
@@ -271,7 +280,7 @@ padding: 0 30px 0 0 ;
 
 `
 export const MoreAboutMe = styled.div`
-background: #F9F8EF;
+background: #F6F6F6;
 display: flex;
 flex-direction: column;
 font-size: 13px;
@@ -305,7 +314,7 @@ export const ProfileImgDiv = styled.div`
 object-fit: fill;
 position: relative;
 width: 220px;
-    height: 240px;
+    height: 250px;
     padding: 20px 0 40px;
  @media ${device.biggerThanMobile}{
   width: 240px;
@@ -313,15 +322,15 @@ width: 220px;
 }
 
 @media ${device.tablet}{
-  width: 260px;
-height: 280px;
+  width: 250px;
+height: 290px;
 }
 @media ${device.desktop}{
   width: 280px;
 height: 310px;
 }
 @media ${device.wide}{
-  width: 300px;
+  width: 320px;
 height: 350px;
 }
 `
@@ -329,12 +338,13 @@ export const MainInfo = styled.div`
 
 padding: 40px 20px;
 @media ${device.biggerThanMobile}{
-  width: 370px;
-padding: 40px 20px;
+  width: 250px;
+padding: 40px 0px;
+
 }
 
 @media ${device.tablet}{
-  width: 270px;
+  width: 250px;
 
 }
 
@@ -355,7 +365,7 @@ font-family: 'Open Sans', sans-serif;
 }
 `
 export const Welcome = styled.div`
-font-family: 'Simonetta', cursive;
+font-family: 'Cormorant', serif;
 color: #1D1D1D;
 font-size: 30px;
 padding: 0 0 7px;
@@ -374,25 +384,30 @@ padding: 20px;
 display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 
 
 @media ${device.biggerThanMobile}{
   flex-direction: row;
-  padding: 100px 20px;
+  padding: 100px 20px 50px;
   display: flex;
   justify-content: center;
+  gap: 50px;
 }
 
 @media ${device.tablet}{
-  padding: 120px 80px;
+  padding: 120px 30px 60px;
+  gap: 50px;
  
 }
 
 @media ${device.desktop}{
-  padding: 130px 100px;
+  padding: 130px 50px 60px;
+  gap: 50px;
 }
 @media ${device.wide}{
-  padding: 150px 200px;
+  padding: 150px 100px 60px;
+  gap: 70px;
 }
 `
 
@@ -405,6 +420,7 @@ justify-content: center;
 font-size: 15px;
 font-family: 'Open Sans', sans-serif;
 font-weight: bold;
+margin-top: 20px;
 @media ${device.biggerThanMobile}{
   font-size: 17px;
 }
@@ -413,6 +429,7 @@ font-weight: bold;
 }
 @media ${device.desktop}{
   font-size: 22px;
+
 }
 `
 export const Heading = styled.h1`
@@ -441,7 +458,8 @@ height: 300px;
 background-size: cover;
 background-position: center;
 width: 100%;
-font-family: 'Vollkorn', serif;
+font-family: 'Cormorant', serif;
+font-weight: bold;
 @media ${device.biggerThanMobile}{
   height: 400px;
 }

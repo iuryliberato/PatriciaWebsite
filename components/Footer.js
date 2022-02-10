@@ -16,7 +16,7 @@ const Footer = ({ linkText }) => {
       <LinksFooter>
         <Links target="blank" href="https://www.znanylekarz.pl/patrycja-langa/psycholog/gdansk">Znany lekarz</Links>
         <Links target="blank" href="https://twojpsycholog.pl/profil-psychologa/patrycja-langa-1089">Twój psycholog</Links>
-        <Links target="blank" href="https://sensly.com/patrycja-langa">Sensly</Links>
+
       </LinksFooter>
       <Copy target="blank" href="https://github.com/iuryliberato">&copy; 2022 Iury Liberato</Copy>
     </FooterDiv>
