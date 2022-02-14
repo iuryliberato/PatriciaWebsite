@@ -53,8 +53,8 @@ width: 600px;
 export const DivForm = styled.div`
 display: flex;
 justify-content: center;
-padding: 50px;
-margin: 40px auto;
+padding: 20px;
+margin: 20px auto;
 
 `
 export const ContactInfo = styled.div`
