@@ -6,16 +6,17 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export const Button = styled.button`
 border: none;
-background: #EDEBDB;
-font-family: 'Vollkorn', serif;
+background: #D8D8D8;
+font-family: 'Cormorant', serif;
+font-weight: bold;
 border-radius: 5px;
 padding: 10px 100px;
 font-size: 20px;
 margin: 40px 0;
-color: #6B6B6B;
+color: #404040;
 cursor: pointer;
 &:hover {
-  background-color: #F9FCF8;
+  background-color: white;
 }
 `
 export const SeeYou = styled.div`
@@ -25,22 +26,22 @@ margin: 60px 20px 0px;
 font-size: 16px;
 `
 export const TextArea = styled.textarea`
-border: 2px solid rgba(237,235,219,0.6);
-background: #F9FCF8;
+border: 1px solid rgba(237,235,219,0.6);
+background: white;
 color: #343434;
 border-radius: 5px;
 padding: 5px 0 0 10px;
-font-family: 'Vollkorn', serif;
+font-family: 'Cormorant', serif;
 font-size: 17px;
 `
 export const Input = styled.input`
 margin-bottom: 20px;
 height: 40px;
-border: 2px solid rgba(237,235,219,0.6);
-background: #F9FCF8;
+border: 1px solid rgba(237,235,219,0.6);
+background: white;
 color: #343434;
 border-radius: 5px;
-font-family: 'Vollkorn', serif;
+font-family: 'Cormorant', serif;
 padding: 0 0 0 10px;
 font-size: 17px;
 `
@@ -61,7 +62,7 @@ font-family: 'Open Sans', sans-serif;
 text-align: center;
 `
 export const Contact = styled.div`
-background: #F9F8EF;
+background: #F0F0F0;
 padding: 50px 20px;
 line-height: 20px;
 @media ${device.biggerThanMobile}{
@@ -90,25 +91,28 @@ line-height: 20px;
 export const B = styled.p`
 font-family: 'Open Sans', sans-serif;
 margin: 10px 0;
-font-size: 16px;
+font-size: 15px;
 `
 
 const PriceBoxLayout = styled(ScrollAnimation)`
-padding: 35px;
+padding: 30px 25px;
 margin-bottom: 20px;
 width: 100%;
+border-radius: 5px;
 @media ${device.desktop}{
   width: 33%;
+  
 }
 
 `
 export const PriceBox3 = styled(PriceBoxLayout)`
-background: #EDEBDB;
+background: white;
 `
 export const PriceBox2 = styled(PriceBoxLayout)`
+background: white;
 `
 export const PriceBox = styled(PriceBoxLayout)`
-background: #F9F8EF;
+background: white;
 `
 export const Subtext = styled.div`
 font-family: 'Cormorant', serif;
@@ -120,6 +124,7 @@ display: flex;
 font-family: 'Open Sans', sans-serif;
 flex-direction: Column;
 overflow: hidden;
+gap: 20px;
 }
 @media ${device.biggerThanMobile}{
   flex-direction: Column;
@@ -137,7 +142,7 @@ overflow: hidden;
 }
 `
 export const PricesDiv = styled.div`
-background: #F9FCF8;
+background: #F6F6F6;
 padding: 50px 20px;
 font-size: 14px;
 @media ${device.biggerThanMobile}{
@@ -146,16 +151,16 @@ font-size: 14px;
 }
 
 @media ${device.tablet}{
-  padding: 80px 50px;
+  padding: 30px 30px;
   font-size: 14px;
 
 }
 @media ${device.desktop}{
-  padding: 80px 100px;
-  font-size: 15px;
+  padding: 30px 30px;
+  font-size: 14px;
 }
 @media ${device.wide}{
-  padding: 100px 200px;
+  padding: 50px 60px;
 }
 `
 
@@ -201,10 +206,11 @@ flex-direction: Column;
 `
 
 export const CoursesDiv = styled.div`
-background: #F9F8EF;
+background: white;
 padding: 50px 30px;
 display: flex;
 flex-direction: Column;
+font-size: 13px;
 @media ${device.biggerThanMobile}{
   padding: 50px 30px;
   font-size: 14px;
@@ -212,13 +218,13 @@ flex-direction: Column;
 }
 
 @media ${device.tablet}{
-  padding: 80px 50px;
+  padding: 50px 50px;
   font-size: 14px;
   flex-direction: column;
 }
 @media ${device.desktop}{
-  padding: 80px 100px;
-  font-size: 15px;
+  padding: 50px 80px;
+  font-size: 14px;
   flex-direction: column;
 }
 @media ${device.wide}{
@@ -248,9 +254,10 @@ margin: 20px 0;
 `
 
 export const EducationDiv = styled.div`
-background: #EDEBDB;
+background: #F0F0F0;
 padding: 50px 30px;
 display: flex;
+font-size: 13px;
 @media ${device.biggerThanMobile}{
   padding: 50px 30px;
   font-size: 14px;
@@ -258,12 +265,12 @@ display: flex;
 }
 
 @media ${device.tablet}{
-  padding: 80px 50px;
+  padding: 70px 50px;
   font-size: 14px;
   flex-direction: row;
 }
 @media ${device.desktop}{
-  padding: 80px 100px;
+  padding: 70px 80px;
   font-size: 15px;
   flex-direction: row;
 }
@@ -297,12 +304,12 @@ padding: 50px 30px;
   flex-direction: row;
 }
 @media ${device.desktop}{
-  padding: 80px 100px;
+  padding: 50px 80px;
   font-size: 15px;
   flex-direction: row;
 }
 @media ${device.wide}{
-  padding: 100px 200px;
+  padding: 70px 100px;
   flex-direction: row;
 }
 `
@@ -379,7 +386,7 @@ padding: 0 0 7px;
 }
 `
 export const Introduction = styled.div`
-background-color: #F9FCF8;
+background-color: white;
 padding: 20px;
 display: flex;
     flex-direction: column;
@@ -396,17 +403,17 @@ display: flex;
 }
 
 @media ${device.tablet}{
-  padding: 120px 30px 60px;
+  padding: 60px 30px 60px;
   gap: 50px;
  
 }
 
 @media ${device.desktop}{
-  padding: 130px 50px 60px;
+  padding: 60px 50px 60px;
   gap: 50px;
 }
 @media ${device.wide}{
-  padding: 150px 100px 60px;
+  padding: 60px 100px 60px;
   gap: 70px;
 }
 `
@@ -474,6 +481,6 @@ height: 600px;
 export const Root = styled.main`
 margin-right: none;
 @media ${device.desktop}{
-margin-right: 200px;
+margin-right: 230px;
 }
 `

@@ -46,7 +46,7 @@ export default function Home() {
       <Root>
         <Header>
           <Heading>Patrycja Langa</Heading>
-          <SubHeaidng>Psycolog / Psychoterapeuta </SubHeaidng>
+          <SubHeaidng>Psycholog / Psychoterapeuta </SubHeaidng>
         </Header>
 
         <Introduction id="O-mnie">
@@ -158,17 +158,18 @@ export default function Home() {
             <PriceBox animateIn="fadeInRight" animateOnce >
               <Subtext>Konsultacja indywidualna </Subtext>
               <p>Jest to nasze pierwsze spotkanie, pierwszy krok do&nbsp;rozpoznania problemów, z&nbsp;jakimi się&nbsp;zmagasz. Konsultacje mogą być&nbsp;formą uzyskania porady psychologicznej lub&nbsp;wstępem do&nbsp;podjęcia terapii poznawczo behawioralnej. Podczas nich&nbsp;wspólnie przyjrzymy się&nbsp;naturze problemu, z&nbsp;którym przychodzisz i&nbsp;zdecydujemy o&nbsp;najlepszym możliwym działaniu. Najczęściej jest to&nbsp;jedno lub&nbsp;kilka spotkań. </p>
-              <B>£45 (online) / £55 (w gabinecie)</B>
+              <B><p>Długość spotkania: 50 minut </p>£45 (online) / £55 (w gabinecie)</B>
             </PriceBox>
             <PriceBox2 animateIn="fadeInRight" animateOnce >
               <Subtext>Psychoterapia indywidualna </Subtext>
               <p>Psychoterapia jest formą leczenia problemów natury psychicznej. Swoją pracę opieram głównie na&nbsp;nurcie Poznawczo-Behawioralnym oraz&nbsp;podejściach trzeciej fali- ACT oraz&nbsp;Dialogu Motywującym. Są&nbsp;to&nbsp;metody pracy o&nbsp;udowodnionej skuteczności. Techniki dostosowane będą do&nbsp;Twoich potrzeb, możliwości oraz&nbsp;sytuacji, w&nbsp;której się&nbsp;znajdujesz. Psychoterapia jest&nbsp;dłuższą formą pomocy, a&nbsp;długość procesu ustalamy indywidualnie. Spotkania odbywają się&nbsp;najczęściej raz&nbsp;w&nbsp;tygodniu. </p>
-              <B>£45 (online) / £55 (w gabinecie)</B>
+              <B><p>Długość spotkania: 50 minut </p>£45 (online) / £55 (w gabinecie)</B>
             </PriceBox2>
             <PriceBox3 animateIn="fadeInRight" animateOnce >
               <Subtext>Interwencja kryzysowa </Subtext>
               <p>Interwencja kryzysowa jest&nbsp;celowym wsparciem psychologicznym w&nbsp;krótkoterminowej formie (od&nbsp;kilku do&nbsp;kilkunastu spotkań). Sesje ukierunkowane są&nbsp;na&nbsp;powrót do&nbsp;równowagi po&nbsp;doświadczeniu kryzysu w&nbsp;życiu oraz&nbsp;rozwiązanie sytuacji problemowej. Najczęstsze sytuacje to &nbsp;świadczenie straty bliskiej osoby, wypadek lub&nbsp;inne zmiany w&nbsp;życiu. Te&nbsp;indywidualne spotkania przeprowadzam głównie w&nbsp;oparciu o&nbsp;teorię interwencji kryzysowej</p>
-              <B>£45 (online) / £55 (w gabinecie)</B>
+
+              <B><p>Długość spotkania: 50 minut </p>£45 (online) / £55 (w gabinecie)</B>
             </PriceBox3>
           </Offers>
         </PricesDiv>
@@ -180,9 +181,9 @@ export default function Home() {
           <DivForm>
             <Form onSubmit={handleSubmit(onSubmit)}>
               <Input {...register("email", { required: true })} placeholder='E-mail…' type="email" />
-              <Input {...register("name", { required: true })} placeholder='Imie…' type="text" />
+              <Input {...register("name", { required: true })} placeholder='Imię…' type="text" />
               <TextArea {...register("message", { required: true })} placeholder='Wiadomość…' rows="5" />
-              <Button type='submit' color='green'>WYŚLIJ</Button>
+              <Button type='submit' color='green'>Wyślij</Button>
             </Form>
           </DivForm>
         </Contact>

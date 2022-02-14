@@ -102,7 +102,7 @@ margin: 0 10px;
 `
 
 const Languages = styled.div`
-background: #F9FCF8;
+background: white;
 padding: 20px 0;
 display: flex;
 flex-direction: row;
@@ -226,10 +226,8 @@ const LogoType = styled(Image)`
 
 `
 const Logodisplay = styled.div`
-display: flex;
-justify-content: center;
-
-
+width: 90%;
+margin: 10px 10px 0;
 `
 const NavContainerMenu = styled.div`
 transform: ${props => props.menuOpen ? 'translate(0, 0)' : 'translate(100%, 0)'};

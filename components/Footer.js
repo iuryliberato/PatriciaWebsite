@@ -47,7 +47,7 @@ display: flex;
 justify-content: center;
 `
 const FooterDiv = styled.div`
-background: #EDEBDB;
+background: #E0E0E0;
 display: flex;
 flex-direction: column;
 margin-right: 0;
@@ -73,18 +73,18 @@ padding: 50px 20px 70px;
 const LinksFooter = styled.div`
 display: flex;
 justify-content: center;
-gap: 35px;
+gap: 55px;
 @media ${device.biggerThanMobile}{
-  gap: 40px
+  gap: 70px
 }
 @media ${device.tablet}{
-  gap: 50px;
+  gap: 80px;
 }
 @media ${device.desktop}{
-  gap: 50px;
+  gap: 100px;
 }
 @media ${device.wide}{
-  gap: 50px;
+  gap: 70px;
 }
 
 `
@@ -100,6 +100,7 @@ font-size: 25px;
 &:hover {
   &:hover {
     transform: scale(1.3);
+    color: #f6f6f6;
   }
  
 }

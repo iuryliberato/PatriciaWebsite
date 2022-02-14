@@ -161,20 +161,20 @@ export default function Home() {
 
               <Subtext>Individual consultation </Subtext>
               <p>In our first meeting the first step will&nbsp;be&nbsp;recognising problems you&nbsp;are&nbsp;struggling with. Consultation may be&nbsp;a&nbsp;form of&nbsp;obtaining psychological advice, or&nbsp;an&nbsp;introduction to cognitive behavioral therapy. During such a meeting, we will&nbsp;jointly look at&nbsp;any problems you&nbsp;come across and decide on&nbsp;the best possible action. Usually it&nbsp;is one to&nbsp;couple meetings.</p>
-              <B>£45 (online) or £55 (in studio)</B>
+              <B><p>Length of the meeting: 50 minutes </p>£45 (online) or £55 (in studio)</B>
 
             </PriceBox>
             <PriceBox2 animateIn="fadeInRight" animateOnce >
 
               <Subtext>Individual psychotherapy</Subtext>
               <p>Psychotherapy is a form of treating mental problems. My work is based mainly on the Cognitive-Behavioral approach and the third wave approaches - ACT and Motivating Dialogue. These are working methods with proven effectiveness. The techniques will be adapted to your needs and capabilities and the situation in which you are. Psychotherapy is a longer form of help and the length of the process is set individually. Meetings are usually held once a week.</p>
-              <B>£45 (online) or £55 (in studio)</B>
+              <B><p>Length of the meeting: 50 minutes </p>£45 (online) or £55 (in studio)</B>
             </PriceBox2>
             <PriceBox3 animateIn="fadeInRight" animateOnce >
 
               <Subtext>Crisis intervention</Subtext>
               <p>Crisis intervention is deliberate psychological support in a short-term form (from a few to a dozen or so meetings). The sessions are aimed at returning to balance after experiencing a crisis in life and solving a problematic situation. The most common crisis include: the loss of a loved one, an accident, life changes or any other stressful situation. I conduct these individual meetings mainly on the basis of the crisis intervention theory.</p>
-              <B>£45 (online) or £55 (in studio)</B>
+              <B><p>Length of the meeting: 50 minutes </p>£45 (online) or £55 (in studio)</B>
 
             </PriceBox3>
           </Offers>
