@@ -73,18 +73,19 @@ padding: 50px 20px 70px;
 const LinksFooter = styled.div`
 display: flex;
 justify-content: center;
-gap: 55px;
+gap: 80px;
 @media ${device.biggerThanMobile}{
-  gap: 70px
+  gap: 80px;
 }
 @media ${device.tablet}{
   gap: 80px;
 }
 @media ${device.desktop}{
-  gap: 100px;
+  gap: 80px;
 }
 @media ${device.wide}{
-  gap: 70px;
+gap: 80px;
+  
 }
 
 `
@@ -96,13 +97,12 @@ text-decoration: none;
 border-radius: 10px;
 font-size: 25px;
 
-
 &:hover {
   &:hover {
     transform: scale(1.3);
     color: #f6f6f6;
   }
- 
+
 }
 @media ${device.biggerThanMobile}{
   margin-right: 0;
