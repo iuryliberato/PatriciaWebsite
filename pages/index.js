@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Patrycja Langa Psychoterapeutką </title>
+        <title>Patrycja Langa Psychoterapeutka </title>
       </Head>
       <GlobalStyles />
       <NavBar links={[{ name: 'O mnie', id: 'O-mnie' }, { name: 'Edukacja', id: 'Edukacja' }, { name: 'Kursy/ konferencje', id: 'Kursy-konferencje' }, { name: 'Oferta', id: 'Oferta' }, { name: 'Kontakt', id: 'Kontakt' }]} image={Logo2} />

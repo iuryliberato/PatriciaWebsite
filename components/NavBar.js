@@ -227,7 +227,7 @@ const LogoType = styled(Image)`
 `
 const Logodisplay = styled.div`
 width: 90%;
-margin: 10px 10px 0;
+
 `
 const NavContainerMenu = styled.div`
 transform: ${props => props.menuOpen ? 'translate(0, 0)' : 'translate(100%, 0)'};
