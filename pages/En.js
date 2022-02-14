@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import Footer from "../components/Footer"
 import { GlobalStyles } from "../components/GlobalStyles"
-import { Root, Header, Heading, SubHeaidng, Introduction, SeeYou, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button } from '../styles/styles'
+import { Root, Header, Heading, WrapperImg, SubHeaidng, Introduction, WrapperText, SeeYou, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button } from '../styles/styles'
 import React from 'react'
 
 import ProfileImage from '../images/profile-image.png'
@@ -51,15 +51,18 @@ export default function Home() {
         </Header>
 
         <Introduction id="aboutme">
+          <WrapperText>
+            <MainInfo>
+              <Welcome >Welcome!</Welcome>
+              <AboutMe>I am a psychologist and a&nbsp;CBT psychotherapist in&nbsp;the process of&nbsp;certification, working in&nbsp;London and online. I mainly work with individuals who&nbsp;experience anxiety, depression, problems with sleeping, crises or&nbsp;traumas, and&nbsp;people who struggle with&nbsp;stress, and&nbsp;sexual problems.</AboutMe>
+            </MainInfo>
+          </WrapperText>
 
-          <MainInfo>
-            <Welcome >Welcome!</Welcome>
-            <AboutMe>I am a psychologist and a&nbsp;CBT psychotherapist in&nbsp;the process of&nbsp;certification, working in&nbsp;London and online. I mainly work with individuals who&nbsp;experience anxiety, depression, problems with sleeping, crises or&nbsp;traumas, and&nbsp;people who struggle with&nbsp;stress, and&nbsp;sexual problems.</AboutMe>
-          </MainInfo>
-          <ProfileImgDiv>
-            <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
-          </ProfileImgDiv>
-
+          <WrapperImg>
+            <ProfileImgDiv>
+              <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
+            </ProfileImgDiv>
+          </WrapperImg>
         </Introduction>
         <MoreAboutMe>
 
@@ -129,13 +132,12 @@ export default function Home() {
               <br />
               <p>Quality of life with infertility, part II- medical</p>
               <br />
-
-
             </AboutMeRight>
             <AboutMeRight>
               <p>Sexologist in the process of lifelong learning. II. Patient and a sexologist in&nbsp; the&nbsp;therapy process</p>
               <br />
               <p>Theory and therapeutic practice Between love and hate - about sexuality</p>
+              <br />
               <p>Betrayal - problem or symptom? Psychotherapeutic work with a couple</p>
               <br />
               <p>Consensual non-monogamy in aid work</p>

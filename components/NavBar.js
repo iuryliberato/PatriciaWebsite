@@ -148,6 +148,7 @@ border-radius: 2px;
     position: fixed;
     right: 20px;
     cursor: pointer;
+    z-index: 10;
     @media ${device.desktop} {
     display: none;
   }
@@ -227,8 +228,8 @@ const LogoType = styled(Image)`
 
 `
 const Logodisplay = styled.div`
-width: 90%;
-
+width: 100%;
+margin-left: 5px;
 `
 const NavContainerMenu = styled.div`
 transform: ${props => props.menuOpen ? 'translate(0, 0)' : 'translate(100%, 0)'};

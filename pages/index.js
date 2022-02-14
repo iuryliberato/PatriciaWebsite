@@ -4,7 +4,7 @@ import Logo2 from '../images/Logo2.png'
 
 import Footer from "../components/Footer"
 import { GlobalStyles } from "../components/GlobalStyles"
-import { Root, Header, Heading, SubHeaidng, Introduction, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button, SeeYou } from '../styles/styles'
+import { Root, Header, Heading, WrapperText, SubHeaidng, WrapperImg, Introduction, MainInfo, Welcome, AboutMe, ProfileImgDiv, ProfileImg, MoreAboutMe, AboutMeRight, EducationDiv, Tittle, CoursesDiv, CoursesRef, PricesDiv, Prices, Offers, PriceBox, Subtext, B, PriceBox2, PriceBox3, Contact, ContactInfo, DivForm, Form, Input, TextArea, Button, SeeYou } from '../styles/styles'
 import React from 'react'
 
 import ProfileImage from '../images/profile-image.png'
@@ -50,15 +50,17 @@ export default function Home() {
         </Header>
 
         <Introduction id="O-mnie">
-
-          <MainInfo>
-            <Welcome >Witaj!</Welcome>
-            <AboutMe>Jestem polskim psychologiem i&nbsp;psychoterapeutką poznawczo – behawioralną w&nbsp;trakcie certyfikacji, pracującą w&nbsp;Londynie oraz&nbsp;online. Pracuję z&nbsp;osobami, które doświadczają stanów lękowych, zaburzeń depresyjnych, problemów ze&nbsp;snem, przechodzących przez kryzysy czy&nbsp;po&nbsp;doświadczeniu traum, z&nbsp;osobami które borykają się&nbsp;ze&nbsp;stresem lub&nbsp;problemami natury seksualnej.</AboutMe>
-          </MainInfo>
-          <ProfileImgDiv>
-            <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
-          </ProfileImgDiv>
-
+          <WrapperText>
+            <MainInfo>
+              <Welcome >Witaj!</Welcome>
+              <AboutMe>Jestem polskim psychologiem i&nbsp;psychoterapeutką poznawczo – behawioralną w&nbsp;trakcie certyfikacji, pracującą w&nbsp;Londynie oraz&nbsp;online. Pracuję z&nbsp;osobami, które doświadczają stanów lękowych, zaburzeń depresyjnych, problemów ze&nbsp;snem, przechodzących przez kryzysy czy&nbsp;po&nbsp;doświadczeniu traum, z&nbsp;osobami które borykają się&nbsp;ze&nbsp;stresem lub&nbsp;problemami natury seksualnej.</AboutMe>
+            </MainInfo>
+          </WrapperText>
+          <WrapperImg>
+            <ProfileImgDiv>
+              <ProfileImg layout="fill" src={ProfileImage} alt='Profile Image' />
+            </ProfileImgDiv>
+          </WrapperImg>
         </Introduction>
         <MoreAboutMe>
 

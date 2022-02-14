@@ -195,13 +195,16 @@ flex-direction: Column;
 
 @media ${device.tablet}{
   flex-direction: row;
+  gap: 40px;
 }
 @media ${device.desktop}{
   flex-direction: row;
+  gap: 40px;
 }
 @media ${device.wide}{
   flex-direction: row;
   display: flex;
+  gap: 40px;
 }
 `
 
@@ -284,7 +287,7 @@ font-size: 13px;
 
 export const AboutMeRight = styled.div`
 font-family: 'Open Sans', sans-serif;
-padding: 0 30px 0 0 ;
+  flex: 1;
 
 `
 export const MoreAboutMe = styled.div`
@@ -293,42 +296,54 @@ display: flex;
 flex-direction: column;
 font-size: 13px;
 padding: 50px 30px;
+flex: 1;
 @media ${device.biggerThanMobile}{
   padding: 50px 30px;
   font-size: 14px;
- 
+  gap: 20px;
+  flex: 1;
 }
 
 @media ${device.tablet}{
   padding: 80px 50px;
   font-size: 14px;
   flex-direction: row;
+  gap: 40px;
+  flex: 1;
 }
 @media ${device.desktop}{
   padding: 50px 80px;
   font-size: 15px;
   flex-direction: row;
+  gap: 40px;
 }
 @media ${device.wide}{
   padding: 70px 100px;
   flex-direction: row;
+  gap: 40px;
 }
 `
 
 export const ProfileImg = styled(Image)`
-    
+`
+export const WrapperImg = styled.div`
+display: flex;
+justify-content: center;
+ @media ${device.biggerThanMobile}{
+  justify-content: flex-start;
+flex: 1;
+ }
 `
 export const ProfileImgDiv = styled.div`
 object-fit: fill;
 position: relative;
 width: 220px;
-    height: 250px;
-    padding: 20px 0 40px;
+height: 250px;
+   
  @media ${device.biggerThanMobile}{
   width: 240px;
   height: 270px;
 }
-
 @media ${device.tablet}{
   width: 250px;
 height: 290px;
@@ -342,34 +357,30 @@ height: 310px;
 height: 350px;
 }
 `
-export const MainInfo = styled.div`
-
-padding: 40px 20px;
+export const WrapperText = styled.div`
+flex: 1;
+display: flex;
+justify-content: center;
 @media ${device.biggerThanMobile}{
-  width: 250px;
-padding: 40px 0px;
-
+  justify-content: flex-end;
 }
+`
 
-@media ${device.tablet}{
-  width: 250px;
-
-}
-
-@media ${device.desktop}{
-  width: 300px;
-
-}
-@media ${device.wide}{
-  width: 350px;
-
-}
+export const MainInfo = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
 `
 export const AboutMe = styled.p`
 font-size: 14px;
 font-family: 'Open Sans', sans-serif;
+display: flex;
+justify-content: Center;
+width: 300px;
+
 @media ${device.desktop}{
   font-size: 15px;
+  
 }
 `
 export const Welcome = styled.div`
@@ -379,43 +390,37 @@ font-size: 30px;
 padding: 0 0 7px;
 @media ${device.tablet}{
   font-size: 37px;
-  padding: 0 0 10px;
+  padding: 0 0  7px;
 }
 @media ${device.desktop}{
   font-size: 40px;
-  padding: 0 0 15px;
+  padding: 0 0 7px;
 }
 `
 export const Introduction = styled.div`
 background-color: white;
-padding: 20px;
 display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-
+    justify-content: center;
+    padding: 50px;
+   gap: 40px;
+   
 @media ${device.biggerThanMobile}{
   flex-direction: row;
-  padding: 100px 20px 50px;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+  padding: 50px;
+  gap: 40px;
 }
 
 @media ${device.tablet}{
-  padding: 60px 30px 60px;
-  gap: 50px;
- 
+  padding: 60px;
 }
 
 @media ${device.desktop}{
-  padding: 60px 50px 60px;
-  gap: 50px;
+  padding: 70px;
 }
 @media ${device.wide}{
-  padding: 60px 100px 60px;
-  gap: 70px;
+  padding: 70px;
+  
 }
 `
 
