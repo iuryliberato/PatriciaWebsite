@@ -110,18 +110,19 @@ margin: 20px 0 0 0;
 justify-content: center;
 `
 const DivHamburguer3 = styled.div`
-background: #EDEDED;
-height: 2px;
+background: #9C9C9C;
+height: 3px;
 margin: 4px;
 `
 const DivHamburguer2 = styled.div`
-background: #EDEDED;
-height: 2px;
+background: #9C9C9C;
+height: 3px;
 margin: 4px;
+
 `
 const DivHamburguer1 = styled.div`
-background: #EDEDED;
-height: 2px;
+background: #9C9C9C;
+height: 3px;
 margin: 4px;
 `
 const Close = styled.div`

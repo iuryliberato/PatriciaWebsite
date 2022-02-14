@@ -12,7 +12,7 @@ font-weight: bold;
 border-radius: 5px;
 padding: 10px 100px;
 font-size: 20px;
-margin: 40px 0;
+margin: 40px 0 10px;
 color: #404040;
 cursor: pointer;
 &:hover {
@@ -63,7 +63,7 @@ text-align: center;
 `
 export const Contact = styled.div`
 background: #F0F0F0;
-padding: 50px 20px;
+padding: 30px 20px;
 line-height: 20px;
 @media ${device.biggerThanMobile}{
   padding: 50px 20px;
