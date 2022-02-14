@@ -218,7 +218,7 @@ font-size: 13px;
 }
 
 @media ${device.tablet}{
-  padding: 50px 50px;
+  padding: 80px 50px;
   font-size: 14px;
   flex-direction: column;
 }
@@ -228,11 +228,14 @@ font-size: 13px;
   flex-direction: column;
 }
 @media ${device.wide}{
-  padding: 100px 200px;
+  padding: 70px 100px;
   flex-direction: column;
   display: flex;
 }
 `
+
+
+
 export const Tittle = styled.div`
 font-family: 'Cormorant', serif;
 font-size: 30px;
@@ -261,21 +264,19 @@ font-size: 13px;
 @media ${device.biggerThanMobile}{
   padding: 50px 30px;
   font-size: 14px;
- 
 }
-
 @media ${device.tablet}{
-  padding: 70px 50px;
+  padding: 80px 50px;
   font-size: 14px;
   flex-direction: row;
 }
 @media ${device.desktop}{
-  padding: 70px 80px;
+  padding: 50px 80px;
   font-size: 15px;
   flex-direction: row;
 }
 @media ${device.wide}{
-  padding: 100px 200px;
+  padding: 70px 100px;
   flex-direction: row;
 }
 `
