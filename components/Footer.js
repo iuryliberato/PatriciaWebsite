@@ -18,11 +18,12 @@ const Footer = ({ linkText }) => {
       <Network>
         {linkText}:
       </Network>
-      <LinksFooter>
-        <Links target="blank" href="https://www.facebook.com/Psycholog-Ptrycja-Langa-103486695580486"><BsFacebook /></Links>
-        <Links target="blank" href="https://www.instagram.com/psychologpatrycjalanga/"><BsInstagram /></Links>
-
-      </LinksFooter>
+      <CenterLinks>
+        <LinksFooter>
+          <Links target="blank" href="https://www.facebook.com/Psycholog-Ptrycja-Langa-103486695580486"><BsFacebook /></Links>
+          <Links target="blank" href="https://www.instagram.com/psychologpatrycjalanga/"><BsInstagram /></Links>
+        </LinksFooter>
+      </CenterLinks>
       <Copy target="blank" href="https://github.com/iuryliberato">&copy; 2022 Iury Liberato</Copy>
     </FooterDiv>
 
@@ -67,24 +68,33 @@ padding: 50px 20px 70px;
 @media ${device.wide}{
   margin-right: 200px;
   padding: 50px 0 70px;
-  
+
 }
+`
+const CenterLinks = styled.div`
+display: flex;
+justify-content: center;
 `
 const LinksFooter = styled.div`
 display: flex;
-justify-content: center;
-gap: 80px;
+justify-content: space-around;
+width: 200px;
+
 @media ${device.biggerThanMobile}{
-  gap: 80px;
+  width: 200px;
+
 }
 @media ${device.tablet}{
-  gap: 80px;
+  width: 250px;
+
 }
 @media ${device.desktop}{
-  gap: 80px;
+  width: 300px;
+
 }
 @media ${device.wide}{
-gap: 80px;
+  width: 300px;
+
   
 }
 
